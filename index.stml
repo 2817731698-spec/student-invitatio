@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>共赴此约｜学生会邀请函</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eadbd0;color:#493b37;font-family:"Songti SC","Noto Serif SC",serif}
+.card{max-width:720px;margin:22px auto;background:#fffaf5;box-shadow:0 15px 55px #76554840}
+.hero{text-align:center;padding:55px 25px 45px;min-height:620px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 50% 10%,#fff 0,#fffaf5 55%,#f8e8df 100%)}
+.school{font-size:12px;letter-spacing:4px;color:#a95658}.year{font-size:12px;color:#9b8880;letter-spacing:2px;margin-top:15px}
+.flower{font-size:28px;color:#d59288}.kicker{font-size:16px;color:#88756e;letter-spacing:5px;margin-top:20px}
+h1{font-size:60px;font-weight:400;letter-spacing:10px;color:#563f3a;text-shadow:2px 2px #f0d5ce;margin:10px 0}
+.en{font:italic 15px Georgia;color:#a95658;letter-spacing:4px}.intro{font-size:16px;line-height:2.1;color:#685953;margin:30px auto;max-width:470px}
+.seal{margin:auto;width:58px;height:58px;border:1px solid #a95658;border-radius:50%;display:grid;place-items:center;color:#a95658;line-height:1.15;transform:rotate(-8deg)}
+section{padding:42px 30px;border-top:1px solid #ead8ce}.label{font:11px Arial;color:#a95658;letter-spacing:4px;text-transform:uppercase}.title{font-size:28px;letter-spacing:4px;margin:12px 0 20px}
+p{font-size:16px;line-height:2.1}.message strong{color:#a95658;font-weight:400}
+.details{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.detail{text-align:center;padding:18px 8px;background:#fff0e9;border:1px solid #efdcd2}.detail small{display:block;color:#a6938c;font:11px Arial;letter-spacing:2px;margin-bottom:8px}.detail b{font-weight:400;line-height:1.7}
+.actions{display:flex;gap:12px;margin-top:25px;flex-wrap:wrap}.btn{flex:1;min-width:130px;padding:13px;text-align:center;text-decoration:none;font:14px "Songti SC";letter-spacing:2px;cursor:pointer}.primary{background:#a95658;color:white}.ghost{border:1px solid #c9867c;color:#a95658;background:transparent}
+.quote{text-align:center;background:#fff0e9}.quote p{font-size:21px;color:#704d47}.quote small{color:#a58d84}.footer{text-align:center;padding:30px 20px 40px;color:#9d8b83;font-size:12px;line-height:2}.footer b{display:block;color:#805552;font-size:16px}
+@media(max-width:520px){h1{font-size:43px}.hero{min-height:570px;padding:40px 20px}.details{gap:6px}.detail{font-size:13px}}
+</style>
+</head>
+<body>
+<main class="card">
+<header class="hero">
+<div><div class="school">成都理工大学 · 计算机与网络空间安全学院</div><div class="year">STUDENT UNION · 2026</div></div>
+<div><div class="flower">❧　✦　❧</div><div class="kicker">谨以一封笺，敬邀您</div><h1>共赴此约</h1><div class="en">AN INVITATION FROM US</div><p class="intro">尊敬的老师：<br>学生会诚挚邀请您出席本次师生工作交流会。<br>愿我们在秋日相见，共话成长与热爱。</p><div class="seal">诚<br>邀</div></div>
+<div style="color:#a99a90;font-size:12px;letter-spacing:3px">向下阅读<br>↓</div>
+</header>
+<section>
+<div class="label">Dear teacher</div><h2 class="title">一纸邀约，盼您莅临</h2>
+<p class="message">老师您好！<br>学生会的每一次前行，都离不开您的指导与关怀。期待与您<strong>面对面交流学生工作</strong>，分享这一学期的计划、故事与小小收获。</p>
+<div class="actions"><a class="btn primary" href="#details">查看活动详情</a><button class="btn ghost" onclick="copyLink()">复制邀请链接</button></div>
+</section>
+<section id="details">
+<div class="label">The day & place</div><h2 class="title">相约在这一日</h2>
+<div class="details"><div class="detail"><small>DATE</small><b>10月18日<br>星期日</b></div><div class="detail"><small>TIME</small><b>14:30<br>准时开始</b></div><div class="detail"><small>PLACE</small><b>学院报告厅<br>主楼 A 区</b></div></div>
+<p style="font-size:12px;color:#a49388;text-align:center">如时间或地点有调整，我们会提前与您联系。</p>
+<div class="actions"><a class="btn primary" href="mailto:studentunion@example.com?subject=师生工作交流会回执">回复出席</a><a class="btn ghost" href="https://maps.baidu.com" target="_blank">打开地图</a></div>
+</section>
+<section class="quote"><p>愿以微小之力，<br>汇成青春最明亮的光。</p><small>— 计算机与网络空间安全学院学生会</small></section>
+<footer class="footer"><b>期待与您相见</b>成都理工大学计算机与网络空间安全学院学生会<br>这份邀请，谨代表我们最真诚的心意</footer>
+</main>
+<script>
+function copyLink(){navigator.clipboard.writeText(location.href).then(()=>alert("邀请链接已复制"))}
+</script>
+</body>
+</html>
